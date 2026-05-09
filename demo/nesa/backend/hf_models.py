@@ -39,6 +39,7 @@ class HuggingFaceModelMixin:
 
     def __init__(self, **kwargs):
         warnings.warn("Instantiation is deprecated.", DeprecationWarning)
+    @classmethod
     def load_model_tokenizer(cls,model_name):
         """
         load model and tokenizer using configuration and local files.
